@@ -1,4 +1,5 @@
 const sketchArea = document.getElementById("sketch-area");
+
 function addPixel() {
     const pixel = document.createElement('div');
     pixel.classList.add('pixel');
@@ -16,6 +17,8 @@ function reset() {
     sketchArea.innerHTML = "";
     let size = prompt('Choose grid size (1 - 72)', '16');
     if (!size || size < 1 || size > 72) { reset() }
-    console.log(size);
     addGrid(size)
 }
+
+const button = document.getElementById("reset");
+button.addEventListener('click', reset);

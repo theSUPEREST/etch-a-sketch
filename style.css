@@ -38,17 +38,18 @@ h1 {
 }
 
 p {
-    padding: .5rem;
+    margin-top: .5rem;
 }
 
 button {
     width: 10rem;
+    margin: .5rem;
+    
 }
 
 .sketch-area {
     width: 40em;
     height: 40em;
-    margin: 1em;
     border: 5px solid black;
     display: grid;
 }
